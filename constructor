@@ -5,11 +5,12 @@ class Student:
     def __init__(self):
         print('we are in the first constructor')
     
-    def __init__(self):
-        print('we are in the seconc constructor')
+    def __init__(self, n):
+        self.name = n
+        print('we are in the seconc constructor: ', self.name)
 
     def display(self):
         print('hi, i am just a display')
 
-s1 = Student()
+s1 = Student('Benedict')
 val = s1.display()
