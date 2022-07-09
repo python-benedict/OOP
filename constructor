@@ -1,0 +1,15 @@
+# Showing that we cannot use two constructor as a time in python classes
+# whenever we try doing this the python compiler will overlook the first one and execute just the second one
+
+class Student:
+    def __init__(self):
+        print('we are in the first constructor')
+    
+    def __init__(self):
+        print('we are in the seconc constructor')
+
+    def display(self):
+        print('hi, i am just a display')
+
+s1 = Student()
+val = s1.display()
